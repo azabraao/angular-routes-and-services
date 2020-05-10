@@ -7,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DefaultLayoutSidebarComponent implements OnInit {
 
-  constructor() { }
+  public sidebarRoutes : any[];
+
+  constructor() { 
+    this.sidebarRoutes = [
+      {label: "Link para example", link: "/example"},
+      {label: "Link para first page", link: "/first-page"},
+      {label: "Link para second page", link: "/second-page"},
+    ]
+  }
 
   ngOnInit() {
   }

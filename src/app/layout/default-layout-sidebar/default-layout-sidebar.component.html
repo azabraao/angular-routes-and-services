@@ -1,1 +1,7 @@
-<div class="app-sidebar">Olá sidebar</div>
+<div class="app-sidebar">
+    <ul>
+        <li *ngFor="let route of sidebarRoutes">
+            <a href="" [routerLink]="route.link" routerLinkActive="active">{{route.label}}</a>
+        </li>
+    </ul>
+</div>
