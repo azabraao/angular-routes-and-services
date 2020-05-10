@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MyDataService } from 'src/app/services/my-data.service';
 
 @Component({
   selector: 'app-second-page',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SecondPageComponent implements OnInit {
 
-  constructor() { }
+  public topics : any[] = [];
+
+  constructor(private myDataService: MyDataService) { }
 
   ngOnInit() {
+    this.myDataService.getList().subscribe(
+      sucessRes => {
+        this.topics = sucessRes.data
+        console.log("Topics", this.topics)
+      },
+      errorRes => {
+        console.log("Erro ao chamar back")
+      }
+    )
   }
 
 }

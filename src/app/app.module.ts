@@ -8,6 +8,7 @@ import { ExampleModule } from './example/example.module';
 import { LayoutModule } from './layout/layout.module';
 import { PagesModule } from './pages/pages.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,

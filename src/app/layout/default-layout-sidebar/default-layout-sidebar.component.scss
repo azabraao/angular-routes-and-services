@@ -3,5 +3,12 @@
     height: 100vh;
     background: #f0f0f0;
     float: left;
+    ul {
+        list-style: none;
+    }
+    li {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
    }
    

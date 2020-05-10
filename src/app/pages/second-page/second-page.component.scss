@@ -1,0 +1,15 @@
+.topics-info {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    background-color: rgba($color: #F2F3AE, $alpha: 0.7);
+    padding: 10px;
+    .title {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .body {
+        font-size: 20px;
+    }
+}
