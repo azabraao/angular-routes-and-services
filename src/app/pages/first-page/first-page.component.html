@@ -1,6 +1,8 @@
-<ul>
-    <li *ngFor="let integrante of integrantes; let i = index">
-        <h3>Integrante {{i + 1}}</h3>
-        <p>{{integrante.nome}}, RM: {{integrante.RM}} </p>
-    </li>
-</ul>
+<div class="topics-container">
+    <ul>
+        <li *ngFor="let integrante of integrantes; let i = index">
+            <h3>Integrante {{i + 1}}</h3>
+            <p>{{integrante.nome}}, RM: {{integrante.RM}} </p>
+        </li>
+    </ul>
+</div>
