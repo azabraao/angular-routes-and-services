@@ -14,7 +14,7 @@ export class MyDataService {
     
      }
   
-     public getList() : Observable<any> {
+     public getData() : Observable<any> {
        let endpoint : string = this.apiUrl + "/posts";
        return this.httpClient.get(endpoint);
      }

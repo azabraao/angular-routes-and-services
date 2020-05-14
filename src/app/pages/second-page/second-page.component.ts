@@ -13,7 +13,7 @@ export class SecondPageComponent implements OnInit {
   constructor(private myDataService: MyDataService) { }
 
   ngOnInit() {
-    this.myDataService.getList().subscribe(
+    this.myDataService.getData().subscribe(
       sucessRes => {
         this.topics = sucessRes.data
         console.log("Topics", this.topics)
