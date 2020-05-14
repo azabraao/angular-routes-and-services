@@ -8,15 +8,15 @@ import { MyDataService } from 'src/app/services/my-data.service';
 })
 export class SecondPageComponent implements OnInit {
 
-  public topics : any[] = [];
+  public posts: any[] = [];
 
   constructor(private myDataService: MyDataService) { }
 
   ngOnInit() {
     this.myDataService.getData().subscribe(
       sucessRes => {
-        this.topics = sucessRes.data
-        console.log("Topics", this.topics)
+        this.posts = sucessRes.data
+        console.log("posts", this.posts)
       },
       errorRes => {
         console.log("Erro ao chamar back")
